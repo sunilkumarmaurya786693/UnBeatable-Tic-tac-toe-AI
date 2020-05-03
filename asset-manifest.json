@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Perfect-Tic-tac-toe-AI/static/css/main.22a87621.chunk.css",
+    "main.js": "/Perfect-Tic-tac-toe-AI/static/js/main.7fbf96a1.chunk.js",
+    "main.js.map": "/Perfect-Tic-tac-toe-AI/static/js/main.7fbf96a1.chunk.js.map",
+    "runtime-main.js": "/Perfect-Tic-tac-toe-AI/static/js/runtime-main.3cc9add9.js",
+    "runtime-main.js.map": "/Perfect-Tic-tac-toe-AI/static/js/runtime-main.3cc9add9.js.map",
+    "static/js/2.578c453f.chunk.js": "/Perfect-Tic-tac-toe-AI/static/js/2.578c453f.chunk.js",
+    "static/js/2.578c453f.chunk.js.map": "/Perfect-Tic-tac-toe-AI/static/js/2.578c453f.chunk.js.map",
+    "index.html": "/Perfect-Tic-tac-toe-AI/index.html",
+    "precache-manifest.8473ed73ba1d0e7343d857ed05265fbe.js": "/Perfect-Tic-tac-toe-AI/precache-manifest.8473ed73ba1d0e7343d857ed05265fbe.js",
+    "service-worker.js": "/Perfect-Tic-tac-toe-AI/service-worker.js",
+    "static/css/main.22a87621.chunk.css.map": "/Perfect-Tic-tac-toe-AI/static/css/main.22a87621.chunk.css.map",
+    "static/js/2.578c453f.chunk.js.LICENSE.txt": "/Perfect-Tic-tac-toe-AI/static/js/2.578c453f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cc9add9.js",
+    "static/js/2.578c453f.chunk.js",
+    "static/css/main.22a87621.chunk.css",
+    "static/js/main.7fbf96a1.chunk.js"
+  ]
+}
