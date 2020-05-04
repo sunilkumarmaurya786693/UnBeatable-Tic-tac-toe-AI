@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Perfect-Tic-tac-toe-AI/static/css/main.6bfa24d5.chunk.css",
-    "main.js": "/Perfect-Tic-tac-toe-AI/static/js/main.0dfd3cc0.chunk.js",
-    "main.js.map": "/Perfect-Tic-tac-toe-AI/static/js/main.0dfd3cc0.chunk.js.map",
-    "runtime-main.js": "/Perfect-Tic-tac-toe-AI/static/js/runtime-main.3cc9add9.js",
-    "runtime-main.js.map": "/Perfect-Tic-tac-toe-AI/static/js/runtime-main.3cc9add9.js.map",
-    "static/js/2.7862d401.chunk.js": "/Perfect-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js",
-    "static/js/2.7862d401.chunk.js.map": "/Perfect-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js.map",
-    "index.html": "/Perfect-Tic-tac-toe-AI/index.html",
-    "precache-manifest.809f7faebe7c99e34dc2e03369c007aa.js": "/Perfect-Tic-tac-toe-AI/precache-manifest.809f7faebe7c99e34dc2e03369c007aa.js",
-    "service-worker.js": "/Perfect-Tic-tac-toe-AI/service-worker.js",
-    "static/css/main.6bfa24d5.chunk.css.map": "/Perfect-Tic-tac-toe-AI/static/css/main.6bfa24d5.chunk.css.map",
-    "static/js/2.7862d401.chunk.js.LICENSE.txt": "/Perfect-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js.LICENSE.txt"
+    "main.css": "/UnBeatable-Tic-tac-toe-AI/static/css/main.6bfa24d5.chunk.css",
+    "main.js": "/UnBeatable-Tic-tac-toe-AI/static/js/main.0dfd3cc0.chunk.js",
+    "main.js.map": "/UnBeatable-Tic-tac-toe-AI/static/js/main.0dfd3cc0.chunk.js.map",
+    "runtime-main.js": "/UnBeatable-Tic-tac-toe-AI/static/js/runtime-main.f0b0e37e.js",
+    "runtime-main.js.map": "/UnBeatable-Tic-tac-toe-AI/static/js/runtime-main.f0b0e37e.js.map",
+    "static/js/2.7862d401.chunk.js": "/UnBeatable-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js",
+    "static/js/2.7862d401.chunk.js.map": "/UnBeatable-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js.map",
+    "index.html": "/UnBeatable-Tic-tac-toe-AI/index.html",
+    "precache-manifest.3e97cddcd1805fecab42b6e56f5c374d.js": "/UnBeatable-Tic-tac-toe-AI/precache-manifest.3e97cddcd1805fecab42b6e56f5c374d.js",
+    "service-worker.js": "/UnBeatable-Tic-tac-toe-AI/service-worker.js",
+    "static/css/main.6bfa24d5.chunk.css.map": "/UnBeatable-Tic-tac-toe-AI/static/css/main.6bfa24d5.chunk.css.map",
+    "static/js/2.7862d401.chunk.js.LICENSE.txt": "/UnBeatable-Tic-tac-toe-AI/static/js/2.7862d401.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3cc9add9.js",
+    "static/js/runtime-main.f0b0e37e.js",
     "static/js/2.7862d401.chunk.js",
     "static/css/main.6bfa24d5.chunk.css",
     "static/js/main.0dfd3cc0.chunk.js"
