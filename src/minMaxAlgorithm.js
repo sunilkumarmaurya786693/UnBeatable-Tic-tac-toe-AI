@@ -90,7 +90,7 @@ const bestMove=(arr)=>{
             let myplayer=false;
             const temp=[...arr];
             let x=checkWinningScore(temp,depth,myplayer);
-            console.log('for ---->',i,"       ",x);
+            // console.log('for ---->',i,"       ",x);
             arr[i]=0;
             if(x>score)
             {

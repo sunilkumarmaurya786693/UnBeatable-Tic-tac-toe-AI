@@ -13,10 +13,14 @@ const TicTacToe = () => {
   const [player, setPlayer] = useState("");
   const [counter, Setcounter] = useState(0);
   const [win, setWin] = useState(false);
+  const [numberOfPlayer,setNumberOfPlayer]=useState(0);
+  const handleSetNumberOfPlayer =(props)=>{
+         setNumberOfPlayer(props);
+  }
   const handleSetPlayer=(props)=>{
       if(player!=="")return;
       setPlayer(props);
-      console.log(props);
+      // console.log(props);
   }
 
   const handleClick = (props) => {
@@ -26,30 +30,32 @@ const TicTacToe = () => {
       temp[props] = 1;
       setArr(temp);
       // arr[props]=player;
-    } else {
-      // const move=minMaxAlgo(arr,player);
-      // arr[move]=player;
+    } else if(numberOfPlayer===2 && player==='O'){
+      const temp = [...arr];
+      temp[props] = 2;
+      setArr(temp);
     }
     if (player === "X") setPlayer("O");
     else setPlayer("X");
     Setcounter(counter + 1);
     const winner = checkWinner(arr);
+    console.log('he is winner---->',winner);
     if (winner !== 0) {
       setWin(true);
       const winner1 = winner === 1 ? "You Win" : "You Lost";
           alert(`${winner1}`);
       setTimeout(() => {
         window.location.reload();
-      }, 1000);
+      }, 2000);
     } else if (counter >= 8) {
       alert("Match Draw");
       setTimeout(() => {
         window.location.reload();
-      }, 1000);
+      }, 2000);
     }
   };
   useEffect(() => {
-    if (player === "O" && win === false) {
+    if (player === "O" && win === false && numberOfPlayer===1) {
       setTimeout(() => {
         const move = minMaxAlgo(arr, player);
         const temp = [...arr];
@@ -59,28 +65,33 @@ const TicTacToe = () => {
         else setPlayer("X");
         Setcounter(counter + 1);
         const winner = checkWinner(arr);
+        console.log('he is winner---->',winner);
         if (winner !== 0) {
           setWin(true);
           const winner1 = winner === 1 ? "You Win" : "You Lost";
           alert(`${winner1}`);
           setTimeout(() => {
             window.location.reload();
-          }, 1500);
+          }, 2000);
         } else if (counter >= 8) {
           alert("Match Draw");
           setTimeout(() => {
             window.location.reload();
-          }, 1500);
+          }, 2000);
         }
-      }, 100);
+      }, 300);
       // console.log(arr);
     }
   }, [player]);
   return (<>
     <div className={styles.container}>
-      {player===""?<div className={styles.playerSelectcontainer}>
+      {numberOfPlayer===0?<div className={styles.numberOfPlayer}>
+      <div onClick={()=>handleSetNumberOfPlayer(1)} className={styles.playerSelect}>Single Player</div>
+      <div onClick={()=>handleSetNumberOfPlayer(2)} className={styles.playerSelect}>Two Player</div>
+      </div>:
+        (player==="") ?<div className={styles.playerSelectcontainer}>
           <div className={styles.playerSelect} onClick={()=>{handleSetPlayer("X")}}>I will start first</div>
-          <div className={styles.playerSelect} onClick={()=>{handleSetPlayer("O")}}>Pc will start first</div>
+          <div className={styles.playerSelect} onClick={()=>{handleSetPlayer("O")}}>{numberOfPlayer===1?'PC':'Friend'} will start first</div>
       </div>:<>
       <div className={styles.row}>
         <div
