@@ -1,7 +1,9 @@
 #Live At
 https://sunilkumarmaurya786693.github.io/Perfect-Tic-tac-toe-AI/
-# Tic-tac-toesdf
+# Tic-tac-toe
 This is web app for tic tac toe game and here I am use minmax Algorithm (AI) so it is not possible to win agains him.
+
+
 #Feacture:
 (1) single player and mutliplayer both formate are present to play.
 (2) In Single player ,U will never beat pc.
