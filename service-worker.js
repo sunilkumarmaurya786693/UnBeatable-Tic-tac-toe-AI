@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Perfect-Tic-tac-toe-AI/precache-manifest.8473ed73ba1d0e7343d857ed05265fbe.js"
+  "/Perfect-Tic-tac-toe-AI/precache-manifest.e58df9b6ae53deffd24cfae8ba13bb1c.js"
 );
 
 self.addEventListener('message', (event) => {
