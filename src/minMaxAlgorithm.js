@@ -1,6 +1,6 @@
 
 const check=(x,y,z)=>{
-    if(x===y && y===z && x!=='')return x;
+    if(x===y && y===z && x!==0)return x;
     return 0;
 }
 export const checkWinner= (arr)=>{
@@ -26,11 +26,11 @@ const isMoveLeft=(arr)=>
 const checkWinningScore=(arr,depth,myPlayer)=>
 {
     let x=checkWinner(arr);
-    if(myPlayer===true && x===2)
+    if(x===2)
     {
       return 10-depth;  
     }
-    else if(myPlayer===false && x===1)
+    if(x===1)
     {
         // cout<<myPlayer<<" "<<x<<endl;
     return depth-10;}
@@ -46,10 +46,9 @@ const checkWinningScore=(arr,depth,myPlayer)=>
                 arr[i]=2;
                 const temp=[...arr];
                 const depth1=depth+1;
-                const myPlayer1=!myPlayer;
-                let x=checkWinningScore(temp,depth1,myPlayer1);
+                let x=checkWinningScore(temp,depth1,false);
                 if(x>score)
-                score=x;
+                {score=x;}
                 arr[i]=0;
             }
         }
@@ -65,11 +64,10 @@ const checkWinningScore=(arr,depth,myPlayer)=>
                 arr[i]=1;
                 const temp=[...arr];
                 const depth1=depth+1;
-                const myPlayer1=!myPlayer;
-                let x=checkWinningScore(temp,depth1,myPlayer1);
+                let x=checkWinningScore(temp,depth1,true);
                 arr[i]=0;
                 if(x<score)
-                score=x;
+                {score=x;}
             }
         }
         return score;

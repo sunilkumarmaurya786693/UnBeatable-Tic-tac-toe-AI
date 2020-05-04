@@ -36,8 +36,8 @@ const TicTacToe = () => {
     const winner = checkWinner(arr);
     if (winner !== 0) {
       setWin(true);
-      const winner1 = winner === 1 ? "X" : "O";
-      alert(`${winner1} Win`);
+      const winner1 = winner === 1 ? "You Win" : "You Lost";
+          alert(`${winner1}`);
       setTimeout(() => {
         window.location.reload();
       }, 1000);
@@ -61,18 +61,18 @@ const TicTacToe = () => {
         const winner = checkWinner(arr);
         if (winner !== 0) {
           setWin(true);
-          const winner1 = winner === 1 ? "X" : "O";
-          alert(`${winner1} Win`);
+          const winner1 = winner === 1 ? "You Win" : "You Lost";
+          alert(`${winner1}`);
           setTimeout(() => {
             window.location.reload();
-          }, 1000);
+          }, 1500);
         } else if (counter >= 8) {
           alert("Match Draw");
           setTimeout(() => {
             window.location.reload();
-          }, 1000);
+          }, 1500);
         }
-      }, 300);
+      }, 100);
       // console.log(arr);
     }
   }, [player]);
